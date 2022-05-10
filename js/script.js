@@ -119,7 +119,7 @@ arrowLeft.addEventListener('click', arrowLeftClick)
 arrowRight.addEventListener('click', arrowRightClick)
 //2.
 document.addEventListener('keydown', function(event) {
-    if (event.keyboard == 37) {
+    if (event.keyCode == 37) {
         arrowLeftClick();
     } else if (event.keyCode == 39) {
         arrowRightClick();
