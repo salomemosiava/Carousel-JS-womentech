@@ -114,13 +114,20 @@ function arrowRightClick () {
     sliderIndex++;
     setSlider();
 }
-
+//1.
 arrowLeft.addEventListener('click', arrowLeftClick)
 arrowRight.addEventListener('click', arrowRightClick)
-
+//2.
+document.addEventListener('keydown', function(event) {
+    if (event.keyboard == 37) {
+        arrowLeftClick();
+    } else if (event.keyCode == 39) {
+        arrowRightClick();
+    }
+})
+//3.
 setInterval( () => {
     arrowRightClick ();
 }, 4000);
-
 
 setSlider();
